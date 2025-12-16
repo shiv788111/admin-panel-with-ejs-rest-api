@@ -52,29 +52,40 @@ This project includes a **server-side rendered UI** along with a **fully working
 
 ├── views/
 
-│ ├── pages/
+ ├── pages/
 
-│ │ ├── addUser.ejs
+ ├── addUser.ejs
 
-│ │ ├── form.ejs
+ ├── form.ejs
 
-│ │ ├── mesage.ejs
+ ├── mesage.ejs
 
-│ │ └── update.ejs
+ └── update.ejs
+ 
 
-│ │
-│ └── partials/
-│ ├── header.ejs
-│ ├── sidebar.ejs
+ │
+ └── partials/
+ 
+ ├── header.ejs
+ 
+├── sidebar.ejs
+
 │ └── layout.ejs
-│
+
+
 ├── public/
-│ ├── stylesheets/
-│ └── images/
-│
+
+ ├── stylesheets/
+
+ └── images/
+
 ├── .env
+
 ├── .gitignore
+
 ├── server.js
+
 ├── package.json
+
 └── package-lock.json
 
