@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messages</title>
+  <link rel="stylesheet" href="/stylesheets/message.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="page-header">
+    <h1>Message Center</h1>
+    <p>Manage and send messages efficiently. Keep your communication organized and stay connected.</p>
+  </header>
+
+  <div class="container">
+
+    <!-- Left Image -->
+    <div class="image-section">
+      <img src="https://img.freepik.com/premium-vector/cute-boy-study-with-laptop-cartoon-icon-illustration-education-technology-icon-concept-isolated-flat-cartoon-style_1240525-889.jpg" alt="Message Illustration">
+    </div>
+
+    <!-- Right Form + Messages -->
+    <div class="form-section">
+
+      <!-- Messages List -->
+      <div class="messages-list">
+       
+      </div>
+
+      <!-- Send Message Form -->
+      <h2>Send a Message</h2>
+      <p>Type your message below and hit send.</p>
+     <form action="/messages/send" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Now</button>
+</form>
+
+
+    </div>
+   
+
+  </div>
+  <a href="/" class="btnnn">Back to Home</a>
+</body>
+</html>

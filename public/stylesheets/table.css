@@ -1,0 +1,159 @@
+/* ===== GLOBAL STYLES ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f2f5;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    max-width: 950px;
+    margin: auto;
+    background: #fff;
+    padding: 30px 35px;
+    border-radius: 15px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+    overflow-x: auto;
+}
+
+.container h1 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 20px;
+}
+
+/* ===== ADD BUTTON ===== */
+.btn {
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 10px;
+    background: #4f46e5;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #6358f1;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(79,70,229,0.25);
+}
+
+/* ===== TABLE STYLES ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    color: #374151;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+thead th {
+    background: #f5f5f5;
+    color: #1f2937;
+    font-weight: 600;
+    text-align: left;
+    padding: 15px 18px;
+    letter-spacing: 0.5px;
+}
+
+tbody td {
+    padding: 15px 18px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+tbody tr:hover {
+    background: #e0e7ff;
+    transition: 0.3s;
+}
+
+/* ===== ACTION BUTTONS ===== */
+tbody a {
+    padding: 6px 14px;
+    border-radius: 8px;
+    margin-right: 5px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+tbody a[href*="/edit/"] {
+    background: #22c55e;
+}
+
+tbody a[href*="/edit/"]:hover {
+    background: #16a34a;
+    transform: translateY(-1px);
+}
+
+tbody a[href*="/delete/"] {
+    background: #ef4444;
+}
+
+tbody a[href*="/delete/"]:hover {
+    background: #b91c1c;
+    transform: translateY(-1px);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody tr {
+        margin-bottom: 20px;
+        border: 1px solid #e5e7eb;
+        border-radius: 10px;
+        padding: 15px;
+    }
+
+    tbody td {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 12px;
+    }
+
+    tbody td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: #1f2937;
+        flex: 1;
+    }
+
+    tbody a {
+        margin-top: 10px;
+        display: inline-block;
+    }
+}
+
+
+.btton {
+
+     height: 100px;
+  width: 100px;
+color: black;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+
+

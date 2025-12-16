@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/layout.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <!-- PROFILE SECTION -->
+        <div class="profile">
+          <img
+            src="https://media.craiyon.com/2025-08-17/cNSQ6Oe0QpOlSp0PnPUrYA.webp"
+            alt="Admin Photo"
+          />
+          <h3>Admin User</h3>
+        </div>
+
+        <ul>
+          <li><a href="/">Dashboard</a></li>
+          <li><a href="/users">Users</a></li>
+          <li><a href="/reports">Reports</a></li>
+          <li><a href="/messages">Messages</a></li>
+          <li><a href="/settings">Settings</a></li>
+        </ul>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+
+      <main class="main-content">
+     
+        <div class="welcome-card">
+          <div class="welcome-text">
+            <h1>Welcome!</h1>
+            <p>
+              Here is your student management dashboard. You can add, edit, or
+              delete student records easily.
+            </p>
+
+            <!-- NOTE: use lowercase class names to match CSS -->
+            <a href="/users/add" class="btn btn-primary add">Add New</a>
+            <a href="/users" class="btn btn-primary show">Show Data</a>
+          </div>
+
+          <div class="welcome-image">
+            <img
+              src="https://img.freepik.com/premium-vector/cute-boy-study-with-laptop-cartoon-icon-illustration-education-technology-icon-concept-isolated-flat-cartoon-style_1240525-866.jpg"
+              alt="Dashboard Illustration"
+            />
+          </div>
+        </div>
+
+        <section class="dashboard">
+          <!-- Summary Cards -->
+          <div class="summary-cards">
+            <div class="card">
+              <h3>Total Students</h3>
+              <p>150</p>
+            </div>
+            <div class="card">
+              <h3>Active Users</h3>
+              <p>120</p>
+            </div>
+            <!-- <div class="card">
+                    <h3>Pending Tasks</h3>
+                    <p>5</p>
+                </div> -->
+          </div>
+
+          <!-- Stats Progress -->
+          <div class="progress-section">
+            <h2>Analytics Overview</h2>
+
+            <div class="progress-box">
+              <span>Students Growth</span>
+              <div class="progress">
+                <div class="progress-bar" style="width: 80%"></div>
+              </div>
+            </div>
+
+            <div class="progress-box">
+              <span>User Activity</span>
+              <div class="progress">
+                <div class="progress-bar" style="width: 70%"></div>
+              </div>
+            </div>
+
+            <div class="progress-box">
+              <span>Task Completion</span>
+              <div class="progress">
+                <div class="progress-bar" style="width: 60%"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- .dashboard -->
+      </main>
+    </div>
+    <!-- .wrapper -->
+  </body>
+</html>
